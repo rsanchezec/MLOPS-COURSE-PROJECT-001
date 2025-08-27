@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Udemy/mlops/MLOPS-PROJECT-001/mlruns/0/c5b8e4daf1d449e2bbab70f7bee0c862/artifacts
+end_time: 1756320798901
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c5b8e4daf1d449e2bbab70f7bee0c862
+run_name: gaudy-perch-882
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756320791942
+status: 3
+tags: []
+user_id: raule

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Udemy/mlops/MLOPS-PROJECT-001/mlruns/0/da6df2b1ff7a464e9bf23bd7b0a166e5/artifacts
+end_time: 1756321784474
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: da6df2b1ff7a464e9bf23bd7b0a166e5
+run_name: casual-snail-775
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756321779227
+status: 3
+tags: []
+user_id: raule
