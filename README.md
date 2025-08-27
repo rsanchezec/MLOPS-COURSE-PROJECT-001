@@ -64,11 +64,13 @@ MLOPS-PROJECT-001/
 │   ├── data_preprocessing.py        # Preprocesamiento e ingeniería de características
 │   ├── logger.py                    # Configuración de logging
 │   └── model_training.py            # Entrenamiento y evaluación del modelo
-├── static/                          # Archivos estáticos
-├── templates/                       # Plantillas HTML
+├── static/                          # Archivos estáticos web
+├── templates/                       # Plantillas HTML para la aplicación web
+│   └── index.html                  # Página principal de predicciones
 ├── utils/                           # Funciones utilitarias
 │   ├── __init__.py
 │   └── common_functions.py          # Funciones utilitarias comunes
+├── application.py                   # Aplicación Flask para predicciones web
 ├── requirements.txt                 # Dependencias de Python
 ├── setup.py                        # Configuración del paquete
 └── README.md                       # Documentación del proyecto
@@ -112,7 +114,7 @@ MLOPS-PROJECT-001/
 - **Seguimiento de Experimentos**: MLflow
 - **Configuración**: PyYAML
 - **Visualización**: seaborn
-- **Framework Web**: Flask (para posible despliegue)
+- **Framework Web**: Flask (aplicación web para predicciones)
 - **Desarrollo**: setuptools
 
 ## 🚀 Instalación
@@ -199,6 +201,14 @@ python src/data_preprocessing.py
 python src/model_training.py
 ```
 
+### Aplicación Web de Predicciones
+```bash
+uv run application.py
+# o alternativamente:
+python application.py
+```
+Accede a la aplicación web en `http://localhost:8080` para realizar predicciones interactivas de reservas hoteleras.
+
 ### Interfaz MLflow
 ```bash
 mlflow ui
@@ -226,7 +236,13 @@ Accede a la interfaz MLflow en `http://localhost:5000` para ver experimentos, m�
 - **Evaluación**: Evaluación multi-métrica con logging detallado
 - **Persistencia**: Serialización de modelos y gestión de artefactos
 
-### 4. Utilidades (`utils/common_functions.py`)
+### 4. Aplicación Web (`application.py`)
+- **Interfaz Flask**: Aplicación web para predicciones en tiempo real
+- **Formulario Interactivo**: Interfaz HTML para ingresar datos de reservas
+- **Predicciones en Vivo**: Predicciones instantáneas usando el modelo entrenado
+- **Despliegue Local**: Servidor web en puerto 8080 para pruebas
+
+### 5. Utilidades (`utils/common_functions.py`)
 - **Gestión de Configuración**: Lectura y validación de archivos YAML
 - **Carga de Datos**: Carga estandarizada de datos con manejo de errores
 - **Logging**: Configuración centralizada de logging

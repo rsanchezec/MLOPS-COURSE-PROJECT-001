@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Udemy/mlops/MLOPS-PROJECT-001/mlruns/0/b5424e7f19e843e0819ab1a6682483a3/artifacts
+end_time: 1756324217914
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b5424e7f19e843e0819ab1a6682483a3
+run_name: youthful-sponge-464
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756324213789
+status: 3
+tags: []
+user_id: raule
